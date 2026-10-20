@@ -1476,8 +1476,7 @@ in
 
   home.packages = [
     pkgs.nerd-fonts.jetbrains-mono
-    pkgs.swaylock
-    pkgs.pulseaudio   # only for the parec tool (mic meter), no daemon is started
+    pkgs.pulseaudio  
   ];
   fonts.fontconfig.enable = true;
 

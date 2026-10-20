@@ -1,14 +1,17 @@
 # nixos dots gaming
  
-My NixOS setup with [niri](https://github.com/YaLTeR/niri) and an [AGS](https://github.com/Aylur/ags) bar in a dark green forest palette with pre-installed programs and some configs for gaming, only for AMD graphic cards
+My NixOS setup with [niri](https://github.com/YaLTeR/niri) and an [AGS](https://github.com/Aylur/ags) bar in a dark green forest palette with pre-installed programs and some configs for gaming
+
+if you have nvidia cards, you will have to change the amdgpu module and driver in the boot section and get the nvidia drivers in configuration.nix
  
 ![](./screenshot.png)
 
 ## Install
  
-1. Grab the files.
-2. Replace `hardware-configuration.nix` with your own (`nixos-generate-config`).
-3. Change the username and hostname
+1. Grab the files
+2. Replace `hardware-configuration.nix` with your own (`nixos-generate-config`)
+3. Change the username and hostname in configuration,nix
+4. Also in configuration.nix, if you have additional disks, scroll down, uncomment the part with disks, fill in the mount path, uuid/label, fs type
 4. Put the files wherever you like and rebuild with flakes:
 ```bash
 sudo nixos-rebuild switch --flake .#yourhostname

@@ -1124,7 +1124,6 @@ let
               <Audio />
               <NetworkModule />
               <BluetoothModule />
-              <BrightnessModule />
               <BatteryModule />
               <SysTray />
               <PowerButton />

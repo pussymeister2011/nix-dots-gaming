@@ -46,7 +46,6 @@
         { type = "custom"; format = ""; }
 
         # --- Disks Info ---
-        # Fixed the key names to be clean and explicitly padded to exactly 6 characters
         { type = "disk"; key = "/     "; keyColor = "white"; folders = [ "/" ]; }
         { type = "disk"; key = "SSD   "; keyColor = "white"; folders = [ "/home/vakh/SSD" ]; }
         { type = "disk"; key = "HDD   "; keyColor = "white"; folders = [ "/home/vakh/HDD" ]; }

@@ -1,0 +1,21 @@
+# nixos dots gaming
+ 
+My NixOS setup with [niri](https://github.com/YaLTeR/niri) and an [AGS](https://github.com/Aylur/ags) bar in a dark green forest palette with pre-installed programs and some configs for gaming, only for AMD graphic cards
+ 
+![](./screenshot.png)
+
+## Install
+ 
+1. Grab the files.
+2. Replace `hardware-configuration.nix` with your own (`nixos-generate-config`).
+3. Change the username and hostname
+4. Put the files wherever you like and rebuild with flakes:
+```bash
+sudo nixos-rebuild switch --flake .#yourhostname
+```
+5. You can delete README and the screenshot, you dont need them
+
+
+
+you can see and edit bindings in modules/niri.nix and shell aliases and extensions at modules/zsh.nix
+ 
